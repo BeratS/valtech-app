@@ -1,0 +1,16 @@
+<div class="navbar flex-center">
+  <div class="container flex-center">
+    <div class="btn-space"></div>
+    <a routerLink="">
+      <img loading="lazy" src="./assets/images/Site_Logo.svg" alt="valstock">
+    </a>
+    
+    <div class="btn-space">
+      <button type="button" class="outline"
+        *ngIf="(userService.auth$ | async)"
+        [routerLink]="['/my-albums']"
+        routerLinkActive="active" 
+        >My Albums</button>
+    </div>
+  </div>
+</div>

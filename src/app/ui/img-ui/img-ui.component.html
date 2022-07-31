@@ -1,0 +1,4 @@
+<img loading="lazy" (load)="loaded()"
+[src]="item?.download_url" [alt]="item?.author">
+<img class="overlay" src="./assets/images/placeholder.png"
+    [ngClass]="{'hide': hideOverlay}"/>

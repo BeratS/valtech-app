@@ -1,0 +1,18 @@
+<div class="container">
+  <div class="detail">
+    <div class="btns btn-gap">
+      <button type="button" (click)="createAlbum()" class="outline-dark">ADD TO ALBUM +</button>
+      <button type="button" (click)="onDownload()">DOWNLOAD</button>
+    </div>
+    
+    <a href="" id="download-img" hidden download></a>
+
+    <img loading="lazy" [src]="album?.download_url" [alt]="album?.author">
+    
+    <h5>UPLOADED BY</h5>
+    <h2>{{album?.author}}</h2>
+    <p>29th November 2021</p>
+    
+    <button class="back" [routerLink]="['/']" type="button">GO BACK</button>
+  </div>
+</div>

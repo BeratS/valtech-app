@@ -1,0 +1,13 @@
+<div class="container">
+    
+    <h2>My Albums</h2>
+    <div class="albums">
+        <div class="album"
+            [routerLink]="[album?.id]"
+            *ngFor="let album of myAlbums">
+            <h2>{{ album?.name }}</h2>
+            <h4>{{ album?.date | datePipe }}</h4>
+        </div>
+    </div>
+
+</div>

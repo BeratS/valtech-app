@@ -1,0 +1,24 @@
+:host {
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+
+img:not(.overlay) {
+    position: absolute;
+    z-index: -1;
+}
+
+.overlay {
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+    background: #eee;
+    opacity: 1;
+
+    &.hide { opacity: 0; }
+    
+    transition: opacity .5s ease-in-out;
+    -moz-transition: opacity .5s ease-in-out;
+    -webkit-transition: opacity .5s  ease-in-out;
+}

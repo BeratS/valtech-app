@@ -1,0 +1,16 @@
+.alert {
+    background-color: var(--primary);
+    position: fixed;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    
+    & .container {
+        font-size: 32px;
+        color: var(--secondary);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        min-height: 180px;
+    }
+}

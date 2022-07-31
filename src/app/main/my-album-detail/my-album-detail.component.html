@@ -1,0 +1,18 @@
+<div class="container" *ngIf="album">
+  <div class="album">
+    <h2>{{ album?.name }}</h2>
+    <h4>{{ album?.date | datePipe }}</h4>
+
+    <div class="imgs">
+      <img *ngFor="let item of album?.imgs"
+        loading="lazy"
+        [src]="item" alt="">
+    </div>
+    
+    <div class="footer btn-gap">
+      <button type="button" class="outline-dark" [routerLink]="['/my-albums']">Close</button>
+      <button type="button">Save</button>
+    </div>
+
+  </div>
+</div>

@@ -1,0 +1,31 @@
+.container {
+    text-align: center;
+}
+
+.detail {
+    max-width: 400px;
+    margin: 0 auto;
+    
+    & .btns {
+        margin: 70px 0 30px;
+        display: flex;
+        justify-content: center;
+    }
+
+    & img {
+        width: 100%;
+    }
+
+    & h5 {
+        font-size: 14px;
+        margin: 30px 0 4px;
+    }
+    & p {
+        font-size: 14px;
+        margin: 4px 0 30px;
+        color: var(--grey);
+    }
+    & .back {
+        margin-bottom: 70px;
+    }
+}

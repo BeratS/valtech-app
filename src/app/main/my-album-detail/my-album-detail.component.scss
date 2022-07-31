@@ -1,0 +1,28 @@
+.album {
+  margin: 70px auto 30px;
+  max-width: 643px;
+  text-align: center;
+
+  & h4 {
+    margin: 10px 0 25px;
+    color: var(--grey);
+  }
+
+  & .imgs {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(190px, 1fr));
+    grid-gap: 36px;
+
+    & img {
+      object-fit: cover;
+      width: 100%;
+      height: 190px;
+    }
+  }
+
+  .footer {
+    display: flex;
+    justify-content: center;
+    margin-top: 70px;
+  }
+}

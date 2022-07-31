@@ -1,0 +1,149 @@
+/* You can add global styles to this file, and also import other style files */
+
+:root {
+    --primary: black;
+    --secondary: white;
+    --grey: grey;
+}
+
+.font-bold {
+  font-family: 'Lexend Deca', sans-serif;
+  font-weight: 800;
+}
+
+* {
+  font-family: 'Lexend Deca', sans-serif;
+  font-weight: normal;
+}
+
+html,
+body {
+    height: 100%;
+}
+
+body {
+  margin: 0;
+}
+
+h1 {
+  font-size: 42px;
+}
+
+h3 {
+  font-size: 22px;
+}
+
+h1, h2, h3, h4, h5 {
+  margin: 0;
+}
+
+.flex-center {
+    display: flex;
+    align-items: center;
+}
+
+button {
+  background-color: var(--primary); /* Green */
+  border: 2px solid var(--primary);
+  color: white;
+  padding: 6px 12px;
+  min-width: 136px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 14px;
+  cursor: pointer;
+
+  &.outline {
+    background: transparent;
+    color: var(--secondary);
+    border: 2px solid var(--secondary);
+
+    &.active {
+      background: var(--secondary);
+      color: var(--primary);
+    }
+  }
+
+  &.outline-dark {
+    background: transparent;
+    color: var(--primary);
+  }
+}
+
+a {
+  cursor: pointer;
+
+  &.btn {
+    font-size: 14px;
+    color: var(--primary);
+    &.grey {
+      color: var(--grey);
+    }
+  }
+}
+
+.btn-gap {
+  gap: 20px;
+}
+
+input {
+  display: block;
+  width: 100%;
+  max-width: 327px;
+  padding: 10px 16px;
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.5;
+  color: var(--grey);
+  background-color: var(--secondary);
+  background-clip: padding-box;
+  border: 2px solid var(--primary);
+  letter-spacing: 0.32px;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  outline: none;
+
+  &.input-text {
+    border: none;
+    padding: 0;
+    font-size: 32px;
+    color: var(--primary);
+
+    &::placeholder {
+      color: var(--primary);
+      opacity: 1;
+    }
+  }
+}
+
+//////////////////// Container /////////////////////////////
+
+.container {
+  width: 100%;
+  margin-right: auto;
+  margin-left: auto;
+
+  @media (max-width: 575px) {
+    width: calc(100% - 24px);
+    padding: 0 12px;
+  }
+  @media (min-width: 576px) {
+    max-width: 540px;
+  }
+  @media (min-width: 768px) {
+    max-width: 720px;
+  }
+  @media (min-width: 992px) {
+    max-width: 960px;
+  }
+  @media (min-width: 1200px) {
+    max-width: 1140px;
+  }
+  @media (min-width: 1400px) {
+    max-width: 1320px;
+  }
+}
+
+//////////////////// End Container /////////////////////////////

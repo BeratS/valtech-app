@@ -1,0 +1,23 @@
+.navbar {
+    background: var(--primary);
+    min-height: 60px;
+
+    & .container {
+        justify-content: space-between;
+
+
+        & .btn-space {
+            flex: 1;
+            text-align: right;
+        }
+    }
+
+    @media screen and (max-width: 600px) {
+        & .container {
+            padding: 0 8px;
+        }
+        & .btn-space:first-child {
+            display: none;
+        }
+    }
+}

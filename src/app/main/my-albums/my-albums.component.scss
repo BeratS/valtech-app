@@ -1,0 +1,25 @@
+.container>h2 {
+  margin-top: 70px;
+  margin-bottom: 30px;
+}
+
+.albums {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
+  grid-gap: 20px;
+
+  & .album {
+    padding: 12px;
+    border: 2px solid var(--primary);
+    cursor: pointer;
+    min-height: 80px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    & h4 {
+      text-align: right;
+      color: var(--grey);
+    }
+  }
+}

@@ -1,0 +1,9 @@
+<div class="container">
+  <div class="albums">
+    <app-img-ui
+      *ngFor="let item of (albums$ | async)"
+      [routerLink]="[item?.id]"
+      [item]="item">
+    </app-img-ui>
+  </div>
+</div>
